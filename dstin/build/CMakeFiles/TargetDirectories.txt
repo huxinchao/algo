@@ -1,0 +1,3 @@
+C:/Users/Administrator/Desktop/dstin/build/CMakeFiles/dstin.dir
+C:/Users/Administrator/Desktop/dstin/build/CMakeFiles/edit_cache.dir
+C:/Users/Administrator/Desktop/dstin/build/CMakeFiles/rebuild_cache.dir

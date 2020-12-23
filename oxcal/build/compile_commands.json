@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/Administrator/Desktop/oxcal/build",
+  "command": "c:/mingw/bin/g++.exe    -g   -o CMakeFiles/oxcal.dir/main.cpp.obj -c C:/Users/Administrator/Desktop/oxcal/main.cpp",
+  "file": "C:/Users/Administrator/Desktop/oxcal/main.cpp"
+},
+{
+  "directory": "C:/Users/Administrator/Desktop/oxcal/build",
+  "command": "c:/mingw/bin/g++.exe    -g   -o CMakeFiles/oxcal.dir/ox_map.cpp.obj -c C:/Users/Administrator/Desktop/oxcal/ox_map.cpp",
+  "file": "C:/Users/Administrator/Desktop/oxcal/ox_map.cpp"
+}
+]
