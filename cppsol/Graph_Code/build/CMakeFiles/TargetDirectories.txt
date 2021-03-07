@@ -1,3 +1,0 @@
-C:/Users/Administrator/Desktop/cppsol/build/CMakeFiles/tmp.dir
-C:/Users/Administrator/Desktop/cppsol/build/CMakeFiles/edit_cache.dir
-C:/Users/Administrator/Desktop/cppsol/build/CMakeFiles/rebuild_cache.dir
