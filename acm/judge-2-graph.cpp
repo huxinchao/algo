@@ -28,9 +28,6 @@ bool dfs(int i, int c) {
 	case 1: c = 2; break;
 	case 2: c = 1;
 	}
-
-
-
 	for(int j = 0; j < n; j++) {
 		if(M[i][j] == 1) {
 			if(MC[j] == 0) {
