@@ -59,14 +59,3 @@ int main() {
 	cout << d[N-1][1] << endl;
 	return 0;
 }
-
-				
-			
-		
-	
-
-			
-		
-		
-		
-	
