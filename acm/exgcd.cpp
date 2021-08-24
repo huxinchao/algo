@@ -12,8 +12,9 @@ int exgcd(int a, int b, int& x, int &y) {
 	return d;
 }
 int main() {
-	int a = 8;
-	int b = 4;
+	int a;
+	int b;
+	cin >> a >> b;
 	int x,y;
 	exgcd(a,b,x,y);
 	cout << x << endl << y << endl;
