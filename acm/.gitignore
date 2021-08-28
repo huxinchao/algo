@@ -1,8 +1,7 @@
-*.t
 target
 run
 tmp.cpp
-*.txt
+input.txt
 
 
 
