@@ -15,28 +15,26 @@ bool C(double x) {
 }
 
 int main() {
-	cin >> n >> k;
+	cin >> n;
 	for(int i = 0; i < n; i++) {
 		cin >> ai[i];
 	}
 
-	/* lb = -1, ub = n;
-	   while(ub - lb > 1) {
-	       int mid = (lb + ub) / 2;
-		   if(a[mid] >= k) ub = mid;
-		   else lb = mid;
-	   }
+	int lb = -1, ub = n;
+	while(ub - lb > 1) {
+	    int mid = (lb + ub) / 2;
+		if(ai[mid] >= 8) ub = mid;
+		else lb = mid;
+    }
 
-	*/
-
-
-	double lb = 0, ub = INF;
+	/*double lb = 0, ub = INF;
 	for(int i = 0; i < 100; i++) {
 		double mid = (lb + ub) / 2;
 		if(C(mid)) lb = mid;
 		else ub = mid;
 	}
-	printf("%.2f\n", floor(ub * 100) / 100);
+	printf("%.2f\n", floor(ub * 100) / 100); */
+	cout << ub << endl;
 	return 0;
 
 	
