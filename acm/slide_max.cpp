@@ -9,11 +9,11 @@ int dq[maxn];
 using namespace std;
 int main() {
 
-	cin >> n;
+	cin >> n >> k;
 	for(int i = 0; i < n; i++) cin >> nums[i];
-	cin >> k;
 
-	int l = 1, r = 0;
+
+	int l = 0, r = -1;
 	for(int i = 0; i < n; i++) {
 		while(r >= l && nums[dq[r]] <= nums[i]) r--;
 		dq[++r] = i;

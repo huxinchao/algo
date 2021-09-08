@@ -21,11 +21,11 @@
 using namespace std;
 int result;
 int n,m;
-int mp[Maxn][Maxn];//原始地图
-int tmp[Maxn][Maxn];//当前操作的地图
-int ans[Maxn][Maxn];//最优解地图
-int dt[][2] = { { -1, 0 }, { 1, 0 }, { 0, 0 }, { 0, -1 }, { 0, 1 } };//5个方向
-int getcolor(int x,int y)//得到(x,y)的颜色
+int mp[Maxn][Maxn];
+int tmp[Maxn][Maxn];
+int ans[Maxn][Maxn];
+int dt[][2] = { { -1, 0 }, { 1, 0 }, { 0, 0 }, { 0, -1 }, { 0, 1 } };
+int getcolor(int x,int y)
 {
     int cnt=mp[x][y];
     for(int i=0; i<5; i++)
@@ -40,14 +40,14 @@ int getcolor(int x,int y)//得到(x,y)的颜色
 int solve()
 {
     int cnt=0;
-    for(int i=1; i<n; i++)//从第二行开始检查是否需要翻转
+    for(int i=1; i<n; i++)
         for(int j=0; j<m; j++)
             if(getcolor(i-1,j))
                 tmp[i][j]=1;
-    for(int i=0; i<m; i++)//检查最后一行是否全为0
+    for(int i=0; i<m; i++)
         if(getcolor(n-1,i))
             return INF;
-    for(int i=0; i<n; i++)//统计翻转次数
+    for(int i=0; i<n; i++)
         for(int j=0; j<m; j++)
             cnt+=tmp[i][j];
     return cnt;
@@ -59,21 +59,21 @@ int main()
     for(int i=0; i<n; i++)
         for(int j=0; j<m; j++)
             cin>>mp[i][j];
-    for(int i=0; i<1<<m; i++)//按照字典序枚举第一行所以翻转可能
+    for(int i=0; i<1<<m; i++)
     {
-        MEM(tmp,0);//初始化地图
+        MEM(tmp,0);
         for(int j=0; j<m; j++)
-            tmp[0][j]= i>>(m-(j+1)) & 1;//第一行的状态
-        int sum=solve();//翻转的次数
-        if(sum<result)//更新地图
+            tmp[0][j]= i>>(m-(j+1)) & 1;
+        int sum=solve();
+        if(sum<result)
         {
             result=sum;
-            memcpy(ans,tmp,sizeof tmp);//tmp数组复制到ans
+            memcpy(ans,tmp,sizeof tmp);
         }
     }
     if(result==INF)
         cout<<"IMPOSSIBLE"<<endl;
-    else//输出
+    else
     {
         for(int i=0; i<n; i++)
         {
