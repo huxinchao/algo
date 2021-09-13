@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bitset>
 using namespace std;
 
 int N,M;
@@ -36,6 +37,10 @@ int main() {
 					}
 					nxt[used] = res;
 				}
+				bitset<4> bs = used;
+				cout << bs << " " << nxt[used] << endl;
+				
+				
 			}
 			swap(crt, nxt);
 		}
