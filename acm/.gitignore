@@ -2,6 +2,7 @@ target
 run
 tmp.cpp
 input.txt
+setpre.sh
 
 
 
