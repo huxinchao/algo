@@ -5,6 +5,7 @@ if [ $? -eq 0 ]; then
     echo "[+] Getting cpp files"
 else
     echo "[-] Can't find cpp files"
+    exit
 fi
 
 
