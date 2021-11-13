@@ -46,11 +46,5 @@ int main() {
 	}
 
 	memset(Dp,-1,sizeof(Dp));
-	cout << rec(0,0) << endl;
-
-	
+	cout << rec(0,0) << endl;	
 }
-
-
-
-

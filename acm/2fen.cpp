@@ -35,6 +35,7 @@ int main() {
 		else ub = mid;
 	}
 	printf("%.2f\n", floor(ub * 100) / 100); */
+
 	cout << ub << endl;
 	return 0;
 
