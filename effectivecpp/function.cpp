@@ -1,16 +1,21 @@
 #include <iostream>
-#include "signal.h"
+#include <functional>
 
-using std::cout;
-using std::endl;
+class Base {
 
-typedef union {
-    unsigned short int value;
-    unsigned char byte[2];
-}to;
+};
+
+class Derived : public Base{
+
+};
+
+int fun(const Base& d) {
+
+}
 
 int main() {
-	int main();
-	
+    using namespace std;
+    function<int(const Base&)> f(fun);
     
 }
+
