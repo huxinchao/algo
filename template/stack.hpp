@@ -1,6 +1,9 @@
 #ifndef MY_STACK_H_
 #define MY_STACK_H
 
+#include <iostream>
+using namespace std;
+
 template<typename T> class my_stack;
 
 template<typename T>
@@ -37,16 +40,13 @@ public:
 	void push(const T& v) {
 		head = new node_type(v,head);
 	}
-	void pop();
-};
-
-template<typename T>
-void my_stack<T>::pop() {
-	if(head) {
-		node_type* tmp = head;
-		head = head->next;
-		delete tmp;
+	void pop() {
+		if(head) {
+			node_type* tmp = head;
+			head = head->next;
+			delete tmp;
+		}
 	}
-}
+};
 
 #endif

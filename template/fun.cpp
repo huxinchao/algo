@@ -17,7 +17,10 @@ namespace std {
 }
 
 int main() {
-    std::set<int> s = {1,2,3};
+    std::set<int> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
     std::cout << s << std::endl;
     
     

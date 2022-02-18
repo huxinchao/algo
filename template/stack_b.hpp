@@ -2,9 +2,11 @@
 #define STACK_B_HPP
 
 #include "stack.hpp"
+
 template<typename T=int>
 class count_stack : public my_stack<T>
 {
+	
 	typedef my_stack<T> base_type;
 	unsigned int size;
 public:
