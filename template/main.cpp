@@ -1,27 +1,30 @@
 #include <iostream>
 #include <malloc.h>
+#include <vector>
+#include <typeinfo>
 using namespace std;
+
+
 
 class Base {
 public:
-    virtual void check() {
-        cout << "check base" << endl;
-    }
+    int value;
 
 };
 
-class Derived : public Base {
-public:
-    virtual void check() {
-        cout << "check derived" << endl;
-    }
-};
+int foo() {
+
+    Base b;
+    cout << "foo:" << b.value << endl;
+}
+
+Base mb;
 
 int main() {
     
-    
-    
-
+    cout << "main: " << mb.value << endl;
+    foo();
 
 }
+
 

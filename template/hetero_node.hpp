@@ -15,7 +15,7 @@ struct hetero_node {
 };
 
 template<typename T, typename N>
-hetero_node<T,N>* push(const T &v, N *n) {
+hetero_node<T,N>* push(const T &v, N *n) { 
 	return new hetero_node<T,N>(v, n);
 }
 
