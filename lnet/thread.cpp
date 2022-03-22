@@ -1,8 +1,6 @@
-#include <pthread.h>
-#include <unistd.h>
-#include <iostream>
+#include <pthreaquick brown fox jumps over the lazy dogream>
 
-static int run = 1;
+static int run = a;
 static int retvalue;
 
 void *start_routing(void *arg) {
