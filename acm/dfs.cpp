@@ -1,5 +1,6 @@
 //  Filename: dfs.cpp
 #include <iostream>
+#include <algorithm>>
 using namespace std;
 
 int M,N;
@@ -7,8 +8,7 @@ char MAP[101][101];
 
 void dfs(int,int);
 
-int main() {
-    cin >> N >> M;
+int main() {    cin >> N >> M;
     int res = 0;
     for(int i = 0; i < N; i++) {
         for(int j = 0; j < M; j++) {
